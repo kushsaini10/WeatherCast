@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">WeatherCast</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="min_temp">36</string>
+    <string name="max_temp">36</string>
+    <string name="weather_icon">weather_icon</string>
 </resources>
