@@ -17,10 +17,14 @@ public class HourlyWVRAdapter extends RecyclerView.Adapter<HourlyWVRAdapter.OurH
 
         TextView maxT;
         TextView minT;
+        TextView hum;
+        TextView vis;
         public OurHolder(View itemView) {
             super(itemView);
             maxT = (TextView) itemView.findViewById(R.id.max_temp);
             minT = (TextView) itemView.findViewById(R.id.min_temp);
+            hum = (TextView) itemView.findViewById(R.id.humidity_value);
+            vis = (TextView) itemView.findViewById(R.id.visibility_value);
         }
     }
     Context mContext;
@@ -43,6 +47,8 @@ public class HourlyWVRAdapter extends RecyclerView.Adapter<HourlyWVRAdapter.OurH
         final HourlyWF h = data.get(position);
         holder.maxT.setText(h.getMaxTemp());
         holder.minT.setText(h.getMinTemp());
+        holder.hum.setText(h.getHumidity());
+        holder.vis.setText(h.getVisibility());
     }
 
     @Override
