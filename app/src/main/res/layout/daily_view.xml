@@ -7,5 +7,27 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#4d81e9">
-
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/icon"
+        android:src="@drawable/cloudicon"
+        android:layout_marginLeft="90dp"
+        android:contentDescription="@string/weather_icon"
+        />
+    <TextView
+        android:textColor="@color/textWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_temp"
+        android:textSize="60sp"
+        android:id="@+id/max_temp"/>
+    <TextView
+        android:textColor="@color/textWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min_temp"
+        android:textSize="60sp"
+        android:layout_marginLeft="280dp"
+        android:id="@+id/min_temp"/>
 </RelativeLayout>
