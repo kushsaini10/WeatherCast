@@ -44,7 +44,7 @@
         android:id="@+id/min_temp"/>
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="60dp"
         android:id="@+id/hourly_recycler_view"
         android:layout_below="@id/summary"
         android:layout_marginTop="20dp">
