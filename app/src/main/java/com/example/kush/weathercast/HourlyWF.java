@@ -5,6 +5,15 @@ package com.example.kush.weathercast;
  */
 public class HourlyWF {
     private String minTemp;
+
+    public String getMinTemp() {
+        return minTemp;
+    }
+
+    public void setMinTemp(String minTemp) {
+        this.minTemp = minTemp;
+    }
+
     private String maxTemp;
 
     public HourlyWF(String maxTemp, String minTemp) {
