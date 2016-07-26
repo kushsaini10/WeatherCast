@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
 
 import java.util.ArrayList;
 
@@ -20,19 +19,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         hourlyRecyclerView = (RecyclerView) findViewById(R.id.hourly_recycler_view);
         data = new ArrayList<>();
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
-        data.add(new HourlyWF("30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+        data.add(new HourlyWF("800 m", "80%", "30","20"));
+
         adapter = new HourlyWVRAdapter(data,this);
         hourlyRecyclerView.setAdapter(adapter);
 
