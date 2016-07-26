@@ -9,8 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#4d81e9"
     tools:context="com.example.kush.weathercast.MainActivity">
-
-
     <ImageView
         android:layout_width="160dp"
         android:layout_height="160dp"
@@ -20,26 +18,33 @@
         android:contentDescription="@string/weather_icon"
         />
     <TextView
+        android:textColor="@color/textWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/icon"
-        android:layout_marginBottom="10dp"
         android:layout_marginLeft="125dp"
         android:text="@string/cloudy"
         android:textSize="30sp"
         android:id="@+id/summary"/>
 
     <TextView
+        android:textColor="@color/textWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/max_temp"
         android:textSize="60sp"
         android:id="@+id/max_temp"/>
     <TextView
+        android:textColor="@color/textWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/min_temp"
         android:textSize="60sp"
         android:layout_marginLeft="280dp"
         android:id="@+id/min_temp"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/summary"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
 </RelativeLayout>
