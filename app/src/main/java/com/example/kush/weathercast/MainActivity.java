@@ -41,6 +41,5 @@ public class MainActivity extends AppCompatActivity {
         hourlyRecyclerView.setLayoutManager(lm);
 //
 //        ItemTouchHelper.SimpleCallback callback = new ItemTouchHelper.SimpleCallback(ItemTouchHelper.RIGHT)
-
     }
 }
