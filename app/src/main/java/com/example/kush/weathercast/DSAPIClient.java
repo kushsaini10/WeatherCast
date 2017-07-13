@@ -12,7 +12,7 @@ public class DSAPIClient {
     private static DSAPIInterface service;
 
     public static DSAPIInterface getService() {
-        Retrofit r = new Retrofit.Builder().baseUrl("https://api.forecast.io/forecast/b4fb23509199a6e36938e4513c34fdd1").
+        Retrofit r = new Retrofit.Builder().baseUrl("https://api.forecast.io/forecast/API_KEY").
                 addConverterFactory(GsonConverterFactory.create(
                         new GsonBuilder().create()))
                 .build();
