@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.example.kush.weathercast"
         minSdkVersion 17
-        targetSdkVersion 24
+        targetSdkVersion 29 //Added support for Android 10.
         versionCode 1
         versionName "1.0"
     }
